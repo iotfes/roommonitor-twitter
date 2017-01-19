@@ -1,0 +1,35 @@
+# 会議室名
+room_name: "会議室C"
+
+# 温度閾値の差分(単位は℃。閾値そのものは含まない。0.25度刻み)
+temperature_diff: 4
+# 照度閾値(単位はルクス。閾値そのものは含まない。1ルクス刻み)
+luminosity: 100
+
+# 赤外線アレイセンサのマトリクスにおける、室内のデジタル機器の位置(v2から対応)
+#例：[[3, 3],[3, 4],[4, 4],[4, 5]]
+location_devices: [******]
+
+# cumulocity
+c8y:
+  host: "******"
+  pageSize: "1"
+  username: "******"
+  password: "******"
+  appkey: "******"
+  # typeはRaspberry piがデータをアップロードする際にJSONの"type"属性にて指定している文字列のこと。例：DHT11_Measurement
+  dht11Type: "******"
+  tsl2561Type: "******"
+  roboba043Type: "******"
+  # fragmentTypeはRaspberry piがデータをアップロードする際にJSONの先頭にて指定している文字列のこと。例：DHT11_TemperatureMeasurement
+  dht11FragmentType: "******"
+  tsl2561FragmentType:  "******"
+  roboba043FragmentType: "******"
+ 
+# [Twitter版のみ]Twitterアカウント情報
+twitter:
+  consumer_key:        "******"
+  consumer_secret:     "******"
+  access_token:        "******"
+  access_token_secret: "******"
+  
